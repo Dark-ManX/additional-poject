@@ -23,37 +23,42 @@
   <body>
     <!-- ==========Header=========== -->
 
-    <header>
-      <img
-        srcset="
-          images/Logo.webp    1x,
-          images/Logo.webp@2x 2x,
-          images/Logo         1x,
-          images/Logo@2x      2x
-        "
-        src="images/Logo.jpg"
-        alt="Logo"
-      />
-      <nav>
-        <ul>
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">Product</a>
-          </li>
-          <li>
-            <a href="">Pricing</a>
-          </li>
-          <li>
-            <a href="">Testimonials</a>
-          </li>
-          <li>
-            <a href="">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-      <button type="button">Buy Now</button>
+    <header class="header section">
+      <div class="container header-menu">
+        <img
+          class="header-menu__img"
+          srcset="
+            images/Logo.webp    1x,
+            images/Logo.webp@2x 2x,
+            images/Logo         1x,
+            images/Logo@2x      2x
+          "
+          src="images/Logo.jpg"
+          alt="Logo"
+        />
+        <nav>
+          <ul class="header-list header-menu__list">
+            <li class="header-list__item">
+              <a href="" class="header-list__link">Home</a>
+            </li>
+            <li class="header-list__item">
+              <a href="" class="header-list__link">Product</a>
+            </li>
+            <li class="header-list__item">
+              <a href="" class="header-list__link">Pricing</a>
+            </li>
+            <li class="header-list__item">
+              <a href="" class="header-list__link">Testimonials</a>
+            </li>
+            <li class="header-list__item">
+              <a href="" class="header-list__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button header-menu__button" type="button">
+          Buy Now
+        </button>
+      </div>
     </header>
 
     <!-- ================Main=============== -->
@@ -61,16 +66,22 @@
     <main>
       <!-- =================Hero section=============== -->
 
-      <section>
-        <p>Sweet fun, full of milk.</p>
-        <h1>Feel inside cold with our delicious <span>ice-cream.</span></h1>
-        <p>
-          Some food has looked so awful that it's looked like something that the
-          dog's brought home, yet after one mouthful I've been left eating my
-          thoughts, my words.
-        </p>
-        <button type="button"></button>
-        <img src="" alt="" />
+      <section class="section hero-section">
+        <div class="container">
+          <div class="hero">
+            <p class="hero__previous">Sweet fun, full of milk.</p>
+            <h1 class="hero__header">
+              Feel inside cold with our delicious <span>ice-cream.</span>
+            </h1>
+            <p class="hero__text">
+              Some food has looked so awful that it's looked like something that
+              the dog's brought home, yet after one mouthful I've been left
+              eating my thoughts, my words.
+            </p>
+            <button class="button hero__button" type="button"></button>
+          </div>
+          <img src="" alt="" />
+        </div>
       </section>
 
       <!-- =================Benefits section============ -->
@@ -222,50 +233,52 @@
 
     <!-- ===================Footer================== -->
 
-    <svg></svg>
-    <p>
-      Some food has looked so awful that it's looked like something that the
-      dog's brought home.
-    </p>
-    <b>Follow Us</b>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <ul>
-      <li>Home</li>
-      <li>Delivery Information</li>
-      <li>Product</li>
-      <li>Privacy Policy</li>
-      <li>Blog</li>
-      <li>Terms & Condition</li>
-      <li>Pricing</li>
-      <li>Search Terms</li>
-      <li>Testimonials</li>
-      <li>Order & Return</li>
-      <li>Contact Us</li>
-    </ul>
-    <b>Newsletter</b>
-    <input type="text" />
-    <button type="submit">Subscribe</button>
-    <ul>
-      <li>
-        <svg>
-          <use></use>
-        </svg>
-      </li>
-      <li>
-        <svg>
-          <use></use>
-        </svg>
-      </li>
-      <li>
-        <svg>
-          <use></use>
-        </svg>
-      </li>
-    </ul>
+    <footer>
+      <svg></svg>
+      <p>
+        Some food has looked so awful that it's looked like something that the
+        dog's brought home.
+      </p>
+      <b>Follow Us</b>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul>
+        <li>Home</li>
+        <li>Delivery Information</li>
+        <li>Product</li>
+        <li>Privacy Policy</li>
+        <li>Blog</li>
+        <li>Terms & Condition</li>
+        <li>Pricing</li>
+        <li>Search Terms</li>
+        <li>Testimonials</li>
+        <li>Order & Return</li>
+        <li>Contact Us</li>
+      </ul>
+      <b>Newsletter</b>
+      <input type="text" />
+      <button type="submit">Subscribe</button>
+      <ul>
+        <li>
+          <svg>
+            <use></use>
+          </svg>
+        </li>
+        <li>
+          <svg>
+            <use></use>
+          </svg>
+        </li>
+        <li>
+          <svg>
+            <use></use>
+          </svg>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

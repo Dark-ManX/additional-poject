@@ -1,0 +1,28 @@
+// ---------------------Hero section-------------------------
+@mixin font($ff, $fw, $fs, $lh, $color) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh / $fs;
+  color: $color;
+}
+
+.hero-section {
+  padding-top: 196px;
+  padding-bottom: 213px;
+}
+.hero {
+  width: 665px;
+  &__previous {
+    @include font(var(--roboto-font), 500, 14px, 16px, var(--heroTextColor));
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+  }
+
+  &__header {
+    flex-wrap: wrap;
+    @include font(var(--fredoka-font), 500, 57px, 69px, var(--heroTextColor));
+    opacity: 0.9;
+    margin-bottom: 35px;
+  }
+}

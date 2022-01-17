@@ -1,0 +1,54 @@
+@import "../utils/variables";
+@import "button";
+@mixin font($ff, $fw, $fs, $lh, $color) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh / $fs;
+  color: $color;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin-top: 10px;
+}
+
+.header-menu__img {
+  display: block;
+  margin-right: 266px;
+}
+
+.header-menu__list {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  height: 100%;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    &:last-child {
+      margin-right: 172px;
+    }
+  }
+
+  &__link {
+    display: block;
+  }
+}
+.header-list__link {
+  display: block;
+  @include font(var(--roboto-font), 400, 14px, 16px, var(--header-font-color));
+  opacity: 0.6;
+}
+
+.header-menu__button {
+  margin-right: 0;
+  background-color: var(--hero-button-color);
+  padding: 14px 50px 13px;
+}
