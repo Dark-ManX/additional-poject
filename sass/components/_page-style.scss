@@ -10,9 +10,15 @@
 .hero-section {
   padding-top: 196px;
   padding-bottom: 213px;
+
+  &__position {
+    position: relative;
+  }
 }
 .hero {
+  margin-right: 681px;
   width: 665px;
+
   &__previous {
     @include font(var(--roboto-font), 500, 14px, 16px, var(--heroTextColor));
     letter-spacing: 0.1em;
@@ -24,5 +30,133 @@
     @include font(var(--fredoka-font), 500, 57px, 69px, var(--heroTextColor));
     opacity: 0.9;
     margin-bottom: 35px;
+  }
+
+  &__span {
+    color: var(--hero-button-color);
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    @include font(var(--hind-font), 400, 18px, 27px, var(--heroTextColor));
+    opacity: 0.6;
+  }
+
+  &__img {
+    @mixin position($bottom, $right, $z) {
+      position: absolute;
+      bottom: $bottom;
+      right: $right;
+      z-index: $z;
+    }
+    &-1 {
+      @include position(-74px, -101px, 4);
+    }
+
+    &-2 {
+      @include position(-219px, -250px, 5);
+      transform: rotate(4.79deg);
+    }
+    &-3 {
+      @include position(-117px, 15px, 3);
+    }
+
+    &-4 {
+      @include position(-188px, 85px, 2);
+    }
+  }
+}
+
+// --------------Benefits section------------------
+
+.benefits {
+  padding: 100px 0;
+  background-color: #fff;
+
+  &__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.title {
+  @include font(var(--hind-font), 600, 44px, 49px, var(--titleColor));
+}
+
+.benefits-list {
+  display: flex;
+
+  &__thumb {
+    width: 100%;
+    height: auto;
+  }
+
+  &__item {
+    padding: 33px 26px 28px;
+
+    &:first-child {
+      margin-left: 22px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 39px;
+    }
+  }
+}
+
+.benefits-item {
+  text-align: center;
+  flex-basis: calc((100% - (39px * 3 + 22px)) / 4);
+
+  &__header {
+    margin-bottom: 9px;
+    @include font(var(--hind-font), 600, 20px, 28px, #000);
+  }
+
+  &__text {
+    @include font(var(--hind-font), 400, 14px, 19px, rgba(#000000, 0.6));
+  }
+  &__icon-coctail {
+    fill: #fd3a84;
+  }
+  &__icon-cashback {
+    fill: #61db99;
+  }
+}
+
+// ---------------Brown sugar section----------------
+.brown-sugar {
+  padding: 141px 0 146px;
+  &__article {
+    position: relative;
+    margin-right: 906px;
+    width: 442px;
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__text {
+    @include font(inherit, inherit, 16px, 24px, rgba(#150101, 0.6));
+    margin-bottom: 35px;
+  }
+  &__shadow-img {
+    position: absolute;
+    right: -575px;
+    bottom: -95px;
+    z-index: 4;
+  }
+  &__img {
+    position: absolute;
+    right: -74px - 655px;
+    bottom: -284px + 97px;
+    z-index: 5;
   }
 }

@@ -24,6 +24,7 @@ a {
   --header-font-color: #150101;
   --btnTextColor: #fafafa;
   --heroTextColor: #0f0101;
+  --titleColor: #150101;
   --roboto-font: "Roboto";
   --hind-font: "Hind Madurai";
   --fredoka-font: "Fredoka One";
@@ -35,6 +36,7 @@ a {
   --header-font-color: #150101;
   --btnTextColor: #fafafa;
   --heroTextColor: #0f0101;
+  --titleColor: #150101;
   --roboto-font: "Roboto";
   --hind-font: "Hind Madurai";
   --fredoka-font: "Fredoka One";
@@ -46,7 +48,7 @@ body {
 }
 
 .section {
-  background-color: var(--hero-background);
+  background-color: rgba(242, 206, 218, 0.3);
 }
 
 .container {
@@ -61,6 +63,7 @@ body {
   --header-font-color: #150101;
   --btnTextColor: #fafafa;
   --heroTextColor: #0f0101;
+  --titleColor: #150101;
   --roboto-font: "Roboto";
   --hind-font: "Hind Madurai";
   --fredoka-font: "Fredoka One";
@@ -119,7 +122,7 @@ body {
   font-family: var(--roboto-font);
   font-weight: 400;
   font-size: 14px;
-  line-height: 0.04px;
+  line-height: 1.1428571429;
   color: var(--header-font-color);
   opacity: 0.6;
 }
@@ -134,8 +137,12 @@ body {
   padding-top: 196px;
   padding-bottom: 213px;
 }
+.hero-section__position {
+  position: relative;
+}
 
 .hero {
+  margin-right: 681px;
   width: 665px;
 }
 .hero__previous {
@@ -157,4 +164,147 @@ body {
   color: var(--heroTextColor);
   opacity: 0.9;
   margin-bottom: 35px;
+}
+.hero__span {
+  color: var(--hero-button-color);
+}
+.hero__text {
+  margin-bottom: 50px;
+  font-family: var(--hind-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--heroTextColor);
+  opacity: 0.6;
+}
+.hero__img-1 {
+  position: absolute;
+  bottom: -74px;
+  right: -101px;
+  z-index: 4;
+}
+.hero__img-2 {
+  position: absolute;
+  bottom: -219px;
+  right: -250px;
+  z-index: 5;
+  -webkit-transform: rotate(4.79deg);
+      -ms-transform: rotate(4.79deg);
+          transform: rotate(4.79deg);
+}
+.hero__img-3 {
+  position: absolute;
+  bottom: -117px;
+  right: 15px;
+  z-index: 3;
+}
+.hero__img-4 {
+  position: absolute;
+  bottom: -188px;
+  right: 85px;
+  z-index: 2;
+}
+
+.benefits {
+  padding: 100px 0;
+  background-color: #fff;
+}
+.benefits__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  font-family: var(--hind-font);
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.1136363636;
+  color: var(--titleColor);
+}
+
+.benefits-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.benefits-list__thumb {
+  width: 100%;
+  height: auto;
+}
+.benefits-list__item {
+  padding: 33px 26px 28px;
+}
+.benefits-list__item:first-child {
+  margin-left: 22px;
+}
+.benefits-list__item:not(:last-child) {
+  margin-right: 39px;
+}
+
+.benefits-item {
+  text-align: center;
+  -ms-flex-preferred-size: calc((100% - (39px * 3 + 22px)) / 4);
+      flex-basis: calc((100% - (39px * 3 + 22px)) / 4);
+}
+.benefits-item__header {
+  margin-bottom: 9px;
+  font-family: var(--hind-font);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #000;
+}
+.benefits-item__text {
+  font-family: var(--hind-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3571428571;
+  color: rgba(0, 0, 0, 0.6);
+}
+.benefits-item__icon-coctail {
+  fill: #fd3a84;
+}
+.benefits-item__icon-cashback {
+  fill: #61db99;
+}
+
+.brown-sugar {
+  padding: 141px 0 146px;
+}
+.brown-sugar__article {
+  position: relative;
+  margin-right: 906px;
+  width: 442px;
+}
+.brown-sugar__title {
+  margin-bottom: 16px;
+}
+.brown-sugar__text {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(21, 1, 1, 0.6);
+  margin-bottom: 35px;
+}
+.brown-sugar__shadow-img {
+  position: absolute;
+  right: -575px;
+  bottom: -95px;
+  z-index: 4;
+}
+.brown-sugar__img {
+  position: absolute;
+  right: -729px;
+  bottom: -187px;
+  z-index: 5;
 }/*# sourceMappingURL=main.css.map */
