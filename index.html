@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Madurai:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
@@ -213,75 +218,90 @@
           <h2 class="title product__title">Our Product</h2>
           <ul class="product__list">
             <li class="product-list-item product__item">
-              <input class="product-list-item product__radiobtn" type="radio" name="choose">
-              ICE CREAM</input>
+              <input
+                class="product-list-item product__radiobtn"
+                type="radio"
+                name="choose"
+              />
+              ICE CREAM
             </li>
             <li class="product-list-item product__item">
-              <input class="product__radiobtn" type="radio" name="choose">
-                CAYENNE CHOCOLATE
-              </input>
+              <input class="product__radiobtn" type="radio" name="choose" />
+              CAYENNE CHOCOLATE
             </li>
             <li class="product-list-item product__item">
-              <input class="product__radiobtn" type="radio" name="choose">
-              CAKE BATTER</input>
+              <input class="product__radiobtn" type="radio" name="choose" />
+              CAKE BATTER
             </li>
             <li class="product-list-item product__item">
-              <input class="product__radiobtn" type="radio" name="choose">
-              CANDY CANE</input>
+              <input class="product__radiobtn" type="radio" name="choose" />
+              CANDY CANE
             </li>
             <li class="product-list-item product__item">
-              <input class="product__radiobtn" type="radio" name="choose">
-              PLATTERS</input>
+              <input class="product__radiobtn" type="radio" name="choose" />
+              PLATTERS
             </li>
             <li class="product-list-item product__item">
-              <input class="product__radiobtn" type="radio" name="choose">
-              DESSERT</input>
+              <input class="product__radiobtn" type="radio" name="choose" />
+              DESSERT
             </li>
           </ul>
-          <ul>
+          <ul class="product-list-2">
             <li class="product-list-2__item">
-              <div>
-              <img src="images/Product-img1.jpg" alt="ice-cream-1" />
+              <div class="product-list-2__first-thumb">
+                <img src="images/Product-img1.jpg" alt="ice-cream-1" />
               </div>
               <div class="product-list-2__second-thumb">
-              <h3 class="product-list-2__header">Brown bread</h3>
-              <p class="product-list-2__text">
-                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
-                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
-                a pioneer in the healthy fast food scene.
-              </p>
-              <b>$19.55<span>$22.55</span></b>
-              <button>Buy Now</button>
+                <h3 class="product-list-2__header">Brown bread</h3>
+                <p class="product-list-2__text">
+                  Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                  Pain is a pioneer in the healthy fast food scene.Bon Au Pain
+                  is a pioneer in the healthy fast food scene.
+                </p>
+                <b class="product-list-2__price"
+                  >$19.55<span class="product-list-2__old-price"
+                    >$22.55</span
+                  ></b
+                >
+                <button class="button">Buy Now</button>
               </div>
             </li>
             <li class="product-list-2__item">
-              <div>
-              <img src="images/Product-img2.jpg" alt="ice-cream-2" />
+              <div class="product-list-2__first-thumb">
+                <img src="images/Product-img2.jpg" alt="ice-cream-2" />
               </div>
               <div class="product-list-2__second-thumb">
-              <h3 class="product-list-2__header">Cayenne chocolate</h3>
-              <p class="product-list-2__text">
-                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
-                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
-                a pioneer in the healthy fast food scene.
-              </p>
-              <b>$19.55<span>$22.55</span></b>
-              <button>Buy Now</button>
+                <h3 class="product-list-2__header">Cayenne chocolate</h3>
+                <p class="product-list-2__text">
+                  Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                  Pain is a pioneer in the healthy fast food scene.Bon Au Pain
+                  is a pioneer in the healthy fast food scene.
+                </p>
+                <b class="product-list-2__price"
+                  >$19.55<span class="product-list-2__old-price"
+                    >$22.55</span
+                  ></b
+                >
+                <button class="button">Buy Now</button>
               </div>
             </li>
             <li class="product-list-2__item">
-              <div>
-              <img src="images/Product-img3.jpg" alt="ice-cream-3" />
+              <div class="product-list-2__first-thumb">
+                <img src="images/Product-img3.jpg" alt="ice-cream-3" />
               </div>
               <div class="product-list-2__second-thumb">
-              <h3 class="product-list-2__header">Sweet corn</h3>
-              <p class="product-list-2__text">
-                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
-                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
-                a pioneer in the healthy fast food scene.
-              </p>
-              <b>$19.55<span>$22.55</span></b>
-              <button>Buy Now</button>
+                <h3 class="product-list-2__header">Sweet corn</h3>
+                <p class="product-list-2__text">
+                  Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                  Pain is a pioneer in the healthy fast food scene.Bon Au Pain
+                  is a pioneer in the healthy fast food scene.
+                </p>
+                <b class="product-list-2__price"
+                  >$19.55<span class="product-list-2__old-price"
+                    >$22.55</span
+                  ></b
+                >
+                <button class="button">Buy Now</button>
               </div>
             </li>
           </ul>
@@ -289,10 +309,20 @@
       </section>
 
       <!-- ==================Reviews section================== -->
-
       <section>
-        <article></article>
-        <img src="" alt="" />
+        <div class="container reviews">
+          <div class="multiple-items">
+            <div>your content</div>
+            <div>your content</div>
+            <div>your content</div>
+          </div>
+
+          <img
+            srcset="images/Reviews-img.jpg 1x, images/Reviews-img@2x.jpg 2x"
+            src="images/Reviews-img.jpg"
+            alt="img for review"
+          />
+        </div>
       </section>
 
       <!-- ===============Simple way to order section============ -->
@@ -384,5 +414,17 @@
         </li>
       </ul>
     </footer>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(".multiple-items").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+    </script>
   </body>
 </html>
