@@ -30,18 +30,6 @@ a {
   --fredoka-font: "Fredoka One";
 }
 
-:root {
-  --hero-background: #f2ceda;
-  --hero-button-color: #d23166;
-  --header-font-color: #150101;
-  --btnTextColor: #fafafa;
-  --heroTextColor: #0f0101;
-  --titleColor: #150101;
-  --roboto-font: "Roboto";
-  --hind-font: "Hind Madurai";
-  --fredoka-font: "Fredoka One";
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -307,4 +295,64 @@ body {
   right: -729px;
   bottom: -187px;
   z-index: 5;
+}
+
+.product {
+  padding: 137px 0 149px;
+  background-color: #fff;
+}
+.product__title {
+  margin-bottom: 64px;
+  text-align: center;
+  line-height: 61px/44px;
+}
+.product-list-item {
+  font-family: var(--roboto-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+  color: rgba(0, 0, 0, 0.6);
+}
+.product__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+.product__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.product-list-2__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.product-list-2__item:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.product-list-2__second-thumb {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-preferred-size: 454px;
+      flex-basis: 454px;
+}
+.product-list-2__header {
+  font-family: var(--hind-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.3846153846;
+  color: #000000;
+  margin-bottom: 11px;
+}
+.product-list-2__text {
+  font-family: var(--roboto-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 26px;
 }/*# sourceMappingURL=main.css.map */
