@@ -12,6 +12,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Madurai:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -218,32 +219,44 @@
           <h2 class="title product__title">Our Product</h2>
           <ul class="product__list">
             <li class="product-list-item product__item">
-              <input
-                class="product-list-item product__radiobtn"
-                type="radio"
-                name="choose"
-              />
-              ICE CREAM
+              <label
+                ><input
+                  class="product-list-item product__radiobtn"
+                  type="radio"
+                  name="choose"
+                />
+                ICE CREAM</label
+              >
             </li>
             <li class="product-list-item product__item">
-              <input class="product__radiobtn" type="radio" name="choose" />
-              CAYENNE CHOCOLATE
+              <label
+                ><input class="product__radiobtn" type="radio" name="choose" />
+                CAYENNE CHOCOLATE</label
+              >
             </li>
             <li class="product-list-item product__item">
-              <input class="product__radiobtn" type="radio" name="choose" />
-              CAKE BATTER
+              <label
+                ><input class="product__radiobtn" type="radio" name="choose" />
+                CAKE BATTER</label
+              >
             </li>
             <li class="product-list-item product__item">
-              <input class="product__radiobtn" type="radio" name="choose" />
-              CANDY CANE
+              <label
+                ><input class="product__radiobtn" type="radio" name="choose" />
+                CANDY CANE</label
+              >
             </li>
             <li class="product-list-item product__item">
-              <input class="product__radiobtn" type="radio" name="choose" />
-              PLATTERS
+              <label
+                ><input class="product__radiobtn" type="radio" name="choose" />
+                PLATTERS</label
+              >
             </li>
             <li class="product-list-item product__item">
-              <input class="product__radiobtn" type="radio" name="choose" />
-              DESSERT
+              <label
+                ><input class="product__radiobtn" type="radio" name="choose" />
+                DESSERT</label
+              >
             </li>
           </ul>
           <ul class="product-list-2">
@@ -309,14 +322,37 @@
       </section>
 
       <!-- ==================Reviews section================== -->
-      <section>
+      <section class="reviews-section">
         <div class="container reviews">
-          <div class="multiple-items">
-            <div>your content</div>
-            <div>your content</div>
-            <div>your content</div>
+          <div class="slider reviews__slider">
+            <div class="slider__thumb">
+              <b class="slider__name">Adele A. McNeill</b>
+              <p class="slider__nation">AMIRICAN</p>
+              <p class="slider__text">
+                Thanks a lot for the prompt service. Really appreciate.
+                Excellence taste in Every Bite.Add a joy of best Taste. Foodie
+                Moments.
+              </p>
+            </div>
+            <div class="slider__thumb">
+              <b class="slider__name">V. Petrenko</b>
+              <p class="slider__nation">UKRAINIAN</p>
+              <p class="slider__text">
+                Thanks a lot for the prompt service. Really appreciate.
+                Excellence taste in Every Bite.Add a joy of best Taste. Foodie
+                Moments.
+              </p>
+            </div>
+            <div class="slider__thumb">
+              <b class="slider__name">M. Schumacher</b>
+              <p class="slider__nation">GERMANIAN</p>
+              <p class="slider__text">
+                Thanks a lot for the prompt service. Really appreciate.
+                Excellence taste in Every Bite.Add a joy of best Taste. Foodie
+                Moments.
+              </p>
+            </div>
           </div>
-
           <img
             srcset="images/Reviews-img.jpg 1x, images/Reviews-img@2x.jpg 2x"
             src="images/Reviews-img.jpg"
@@ -327,41 +363,95 @@
 
       <!-- ===============Simple way to order section============ -->
 
-      <section>
-        <div></div>
-        <h2>Simple Way To Order Your Food</h2>
-        <p>
-          Some food has looked so awful that it's looked like something that the
-          dog's brought home, yet after one mouthful I've been left eating my
-          thoughts.
-        </p>
-        <ul>
-          <li>
-            <a href=""></a>
-          </li>
-          <li>
-            <a href=""></a>
-          </li>
-          <li>
-            <a href=""></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a></a>
-          </li>
-          <li>
-            <a></a>
-          </li>
-        </ul>
+      <section class="section order-section">
+        <div class="container order">
+          <div class="order__thumb">
+            <h2 class="order__title title">Simple Way To Order Your Food</h2>
+            <p class="order__text">
+              Some food has looked so awful that it's looked like something that
+              the dog's brought home, yet after one mouthful I've been left
+              eating my thoughts.
+            </p>
+            <ul class="order-list">
+              <li class="order-list__item">
+                <a href="" class="order-list__link">
+                  <div class="svg-thumb">
+                    <svg width="14" height="14">
+                      <use
+                        href="images/sprite.svg#icon-Order-select-food"
+                      ></use>
+                    </svg>
+                  </div>
+                  Select Your Food</a
+                >
+              </li>
+              <li class="order-list__item">
+                <a href="" class="order-list__link">
+                  <div class="svg-thumb">
+                    <svg width="14" height="14">
+                      <use href="images/sprite.svg#icon-Order-add-cart"></use>
+                    </svg>
+                  </div>
+                  Add To Cart</a
+                >
+              </li>
+              <li class="order-list__item">
+                <a href="" class="order-list__link">
+                  <div class="svg-thumb">
+                    <svg width="14" height="14">
+                      <use href="images/sprite.svg#icon-Order-add-cart"></use>
+                    </svg>
+                  </div>
+                  Order Your Food</a
+                >
+              </li>
+            </ul>
+            <ul class="app-list">
+              <li class="app-list__item">
+                <a href="" class="app-list__link-1">
+                  <img
+                    class="app-list__img"
+                    srcset="
+                      images/GooglePlay.png    1x,
+                      images/GooglePlay@2x.png 2x
+                    "
+                    src="images/GooglePlay.png"
+                    alt="Google Play"
+                  />
+                </a>
+              </li>
+              <li class="app-list__item">
+                <a href="" class="app-list__link-2">
+                  <img
+                    class="app-list__img"
+                    srcset="images/AppStore.png 1x, images/AppStore@2x.png 2x"
+                    src="images/AppStore.png"
+                    alt="App Store"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="order-example__thumb">
+            <img
+              srcset="images/Order-img.jpg 1x, images/Order-img@2x.jpg 2x"
+              src="images/Order-img.jpg"
+              alt="Order example"
+            />
+          </div>
+        </div>
       </section>
 
       <!-- ===============Help section=============== -->
 
-      <section>
-        <h2>Have Question in Mind? Let us help you</h2>
-        <input type="text" placeholder="Enter your question" />
-        <button>Send</button>
+      <section class="section help-section">
+        <div class="container help">
+          <h2 class="help__title title">
+            Have Question in Mind? Let us help you
+          </h2>
+          <input type="text" placeholder="Enter your question" />
+          <button>Send</button>
+        </div>
       </section>
     </main>
 
@@ -417,10 +507,19 @@
 
     <script
       type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script>
-      $(".multiple-items").slick({
+      $(".slider").slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,

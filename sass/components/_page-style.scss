@@ -170,7 +170,7 @@
   &__title {
     margin-bottom: 64px;
     text-align: center;
-    line-height: 61px / 44px;
+    line-height: 1.39;
   }
 
   &-list-item {
@@ -236,6 +236,128 @@
 
 // -------------Reviews section------------
 
+.reviews-section {
+  padding: 0 0 149px;
+}
+
 .reviews {
   display: flex;
+}
+
+.slider {
+  &__name {
+    @include font(var(--roboto-font), 500, 24px, 28px, var(--blackColor));
+    margin-bottom: 5px;
+  }
+
+  &__nation {
+    @include font(var(--roboto-font), 500, 12px, 14px, rgba(#000000, 0.7));
+    margin-bottom: 50px;
+  }
+}
+
+// ---------------Order section-------------------
+
+.order-section {
+  padding: 90px 0 150px;
+}
+
+.order {
+  position: relative;
+
+  &__thumb {
+    margin-left: 439px;
+    max-width: 633px;
+  }
+
+  &__title {
+    line-height: 1.18;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @include font(var(--roboto-font), 400, 18px, 21px, rgba(#0f0101, 0.7));
+    letter-spacing: 0.01em;
+    margin-bottom: 31px;
+    width: 607px;
+  }
+}
+
+.order-list {
+  margin-bottom: 40px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    @include font(var(--roboto-font), 400, 22px, 26px, var(--blackColor));
+  }
+}
+
+.svg-thumb {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.app-list {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    width: auto;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+
+    &-1 {
+      width: 200px;
+    }
+
+    &-2 {
+      width: 173px;
+    }
+  }
+
+  &__img {
+  }
+}
+
+.order-example__thumb {
+  position: absolute;
+  left: 5px;
+  bottom: -197px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+// -----------------Help section---------------
+
+.help-section {
+  padding: 191px 0 149px;
+  background-color: #fff;
+}
+
+.help {
+  text-align: center;
+
+  &__title {
+    @include font(var(--roboto-font), 500, 44px, 52px, var(--blackColor));
+    margin-bottom: 28px;
+    max-width: 522px;
+  }
 }
