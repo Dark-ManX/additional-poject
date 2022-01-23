@@ -21,11 +21,13 @@ a {
 :root {
   --hero-background: #f2ceda;
   --hero-button-color: #d23166;
+  --button-color: #d64374;
   --header-font-color: #150101;
   --btnTextColor: #fafafa;
   --heroTextColor: #0f0101;
   --titleColor: #150101;
   --blackColor: #000000;
+  --footerColor: #0a0808;
   --roboto-font: "Roboto";
   --hind-font: "Hind Madurai";
   --fredoka-font: "Fredoka One";
@@ -49,11 +51,13 @@ body {
 :root {
   --hero-background: #f2ceda;
   --hero-button-color: #d23166;
+  --button-color: #d64374;
   --header-font-color: #150101;
   --btnTextColor: #fafafa;
   --heroTextColor: #0f0101;
   --titleColor: #150101;
   --blackColor: #000000;
+  --footerColor: #0a0808;
   --roboto-font: "Roboto";
   --hind-font: "Hind Madurai";
   --fredoka-font: "Fredoka One";
@@ -62,7 +66,7 @@ body {
 .button {
   min-width: 165px;
   min-height: 49px;
-  background: #d64374;
+  background: var(--button-color);
   border-radius: 5px;
   text-align: center;
   color: var(--btnTextColor);
@@ -330,9 +334,6 @@ body {
   margin-right: 40px;
 }
 
-.product-list-2 {
-  margin-bottom: 112px;
-}
 .product-list-2__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -399,6 +400,13 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+.reviews__slider {
+  max-width: 343px;
+  margin-right: 224px;
+  margin-top: 93px;
+  padding-left: 21px;
+  position: relative;
+}
 
 .slider__name {
   font-family: var(--roboto-font);
@@ -407,6 +415,7 @@ body {
   line-height: 1.1666666667;
   color: var(--blackColor);
   margin-bottom: 5px;
+  margin-left: 49px;
 }
 .slider__nation {
   font-family: var(--roboto-font);
@@ -415,6 +424,75 @@ body {
   line-height: 1.1666666667;
   color: rgba(0, 0, 0, 0.7);
   margin-bottom: 50px;
+  margin-left: 49px;
+}
+.slider__text {
+  font-family: var(--roboto-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 50px;
+}
+.slider__photo {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.slick-prev,
+.slick-next {
+  color: var(--button-color);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  z-index: 3;
+  position: absolute;
+  top: 300px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: "";
+  display: block;
+  border-top: 2px solid var(--button-color);
+  border-left: 2px solid var(--button-color);
+  margin: 0 auto;
+  width: 14px;
+  height: 14px;
+  color: var(--button-color);
+}
+
+.slick-prev::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.slick-next::before {
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.slick-next {
+  left: 235px;
+}
+
+.slick-prev {
+  left: -20px;
+}
+
+.reviews-img-box {
+  width: 181px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .order-section {
@@ -508,6 +586,7 @@ body {
 .app-list__link-2 {
   width: 173px;
 }
+
 .order-example__thumb {
   position: absolute;
   left: 5px;
@@ -517,12 +596,14 @@ body {
 }
 
 .help-section {
-  padding: 191px 0 149px;
+  padding: 191px 0 149px 0;
   background-color: #fff;
 }
 
 .help {
+  margin: 0 auto;
   text-align: center;
+  width: 522px;
 }
 .help__title {
   font-family: var(--roboto-font);
@@ -531,5 +612,45 @@ body {
   line-height: 1.1818181818;
   color: var(--blackColor);
   margin-bottom: 28px;
-  max-width: 522px;
+}
+.help__form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 637px;
+  height: 74px;
+}
+.help__input {
+  width: 100%;
+  background-color: var(--btnTextColor);
+  border: none;
+  border-radius: 5px;
+  padding: 0 140px 0 30px;
+}
+.help__button {
+  min-width: 134px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.footer-section {
+  padding: 70px 0 104px;
+  background-color: var(--footerColor);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__social-thumb {
+  width: 207px;
+  margin-right: 37px;
+}
+.footer__central-list {
+  width: 309px;
 }/*# sourceMappingURL=main.css.map */

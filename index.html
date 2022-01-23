@@ -12,6 +12,12 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Madurai:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
@@ -33,13 +39,9 @@
       <div class="container header-menu">
         <img
           class="header-menu__img"
-          srcset="
-            images/Logo.webp    1x,
-            images/Logo.webp@2x 2x,
-            images/Logo         1x,
-            images/Logo@2x      2x
-          "
-          src="images/Logo.jpg"
+          srcset="images/logo.png 1x,
+              images/logo@2x 2x.png"
+          src="images/logo.png"
           alt="Logo"
         />
         <nav>
@@ -326,6 +328,13 @@
         <div class="container reviews">
           <div class="slider reviews__slider">
             <div class="slider__thumb">
+              <img
+                width="59"
+                height="58"
+                class="slider__photo"
+                src="images/photo.jpg"
+                alt="Reviewers photo"
+              />
               <b class="slider__name">Adele A. McNeill</b>
               <p class="slider__nation">AMIRICAN</p>
               <p class="slider__text">
@@ -333,8 +342,38 @@
                 Excellence taste in Every Bite.Add a joy of best Taste. Foodie
                 Moments.
               </p>
+              <div class="reviews-img-box">
+                <img
+                  width="35"
+                  height="35"
+                  class="slider__photo"
+                  src="images/photo2.jpg"
+                  alt="Reviewers photo"
+                />
+                <img
+                  width="58"
+                  height="58"
+                  class="slider__photo"
+                  src="images/photo.jpg"
+                  alt="Reviewers photo"
+                />
+                <img
+                  width="35"
+                  height="35"
+                  class="slider__photo"
+                  src="images/photo1.jpg"
+                  alt="Reviewers photo"
+                />
+              </div>
             </div>
             <div class="slider__thumb">
+              <img
+                width="59"
+                height="58"
+                class="slider__photo"
+                src="images/photo1.jpg"
+                alt="Reviewers photo"
+              />
               <b class="slider__name">V. Petrenko</b>
               <p class="slider__nation">UKRAINIAN</p>
               <p class="slider__text">
@@ -342,8 +381,38 @@
                 Excellence taste in Every Bite.Add a joy of best Taste. Foodie
                 Moments.
               </p>
+              <div class="reviews-img-box">
+                <img
+                  width="35"
+                  height="35"
+                  class="slider__photo"
+                  src="images/photo.jpg"
+                  alt="Reviewers photo"
+                />
+                <img
+                  width="58"
+                  height="58"
+                  class="slider__photo"
+                  src="images/photo1.jpg"
+                  alt="Reviewers photo"
+                />
+                <img
+                  width="35"
+                  height="35"
+                  class="slider__photo"
+                  src="images/photo2.jpg"
+                  alt="Reviewers photo"
+                />
+              </div>
             </div>
             <div class="slider__thumb">
+              <img
+                width="59"
+                height="58"
+                class="slider__photo"
+                src="images/photo2.jpg"
+                alt="Reviewers photo"
+              />
               <b class="slider__name">M. Schumacher</b>
               <p class="slider__nation">GERMANIAN</p>
               <p class="slider__text">
@@ -351,6 +420,29 @@
                 Excellence taste in Every Bite.Add a joy of best Taste. Foodie
                 Moments.
               </p>
+              <div class="reviews-img-box">
+                <img
+                  width="35"
+                  height="35"
+                  class="slider__photo"
+                  src="images/photo1.jpg"
+                  alt="Reviewers photo"
+                />
+                <img
+                  width="58"
+                  height="58"
+                  class="slider__photo"
+                  src="images/photo2.jpg"
+                  alt="Reviewers photo"
+                />
+                <img
+                  width="35"
+                  height="35"
+                  class="slider__photo"
+                  src="images/photo.jpg"
+                  alt="Reviewers photo"
+                />
+              </div>
             </div>
           </div>
           <img
@@ -447,62 +539,85 @@
       <section class="section help-section">
         <div class="container help">
           <h2 class="help__title title">
-            Have Question in Mind? Let us help you
+            Have Question in Mind?<br />Let us help you
           </h2>
-          <input type="text" placeholder="Enter your question" />
-          <button>Send</button>
+          <div class="help__form">
+            <input
+              class="help__input"
+              type="text"
+              placeholder="Enter your question"
+            />
+            <button class="button help__button" type="submit">Send</button>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- ===================Footer================== -->
 
-    <footer>
-      <svg></svg>
-      <p>
-        Some food has looked so awful that it's looked like something that the
-        dog's brought home.
-      </p>
-      <b>Follow Us</b>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <ul>
-        <li>Home</li>
-        <li>Delivery Information</li>
-        <li>Product</li>
-        <li>Privacy Policy</li>
-        <li>Blog</li>
-        <li>Terms & Condition</li>
-        <li>Pricing</li>
-        <li>Search Terms</li>
-        <li>Testimonials</li>
-        <li>Order & Return</li>
-        <li>Contact Us</li>
-      </ul>
-      <b>Newsletter</b>
-      <input type="text" />
-      <button type="submit">Subscribe</button>
-      <ul>
-        <li>
-          <svg>
-            <use></use>
-          </svg>
-        </li>
-        <li>
-          <svg>
-            <use></use>
-          </svg>
-        </li>
-        <li>
-          <svg>
-            <use></use>
-          </svg>
-        </li>
-      </ul>
+    <footer class="footer-section">
+      <div class="container">
+        <img
+          width="79"
+          height="79"
+          class="logo"
+          srcset="images/logo.png 1x, images/logo@2x.png 2x"
+          src="images/logo.png"
+          alt="Logo"
+        />
+        <div class="footer">
+          <div class="footer-first-thumb footer__social-thumb">
+            <p>
+              Some food has looked so awful that it's looked like something that
+              the dog's brought home.
+            </p>
+            <b>Follow Us</b>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+
+          <ul class="central-list footer__central-list">
+            <li>Home</li>
+            <li>Delivery Information</li>
+            <li>Product</li>
+            <li>Privacy Policy</li>
+            <li>Blog</li>
+            <li>Terms & Condition</li>
+            <li>Pricing</li>
+            <li>Search Terms</li>
+            <li>Testimonials</li>
+            <li>Order & Return</li>
+            <li>Contact Us</li>
+          </ul>
+
+          <div>
+            <b>Newsletter</b>
+            <input type="text" />
+            <button type="submit">Subscribe</button>
+            <ul>
+              <li>
+                <svg>
+                  <use></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script

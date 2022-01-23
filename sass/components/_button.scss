@@ -1,7 +1,7 @@
 .button {
   min-width: 165px;
   min-height: 49px;
-  background: #d64374;
+  background: var(--button-color);
   border-radius: 5px;
   text-align: center;
   color: var(--btnTextColor);

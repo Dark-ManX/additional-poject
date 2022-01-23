@@ -190,8 +190,6 @@
 }
 
 .product-list-2 {
-  margin-bottom: 112px;
-
   &__item {
     display: flex;
 
@@ -242,18 +240,84 @@
 
 .reviews {
   display: flex;
+
+  &__slider {
+    max-width: 343px;
+    margin-right: 224px;
+    margin-top: 93px;
+    padding-left: 21px;
+    position: relative;
+  }
 }
 
 .slider {
   &__name {
     @include font(var(--roboto-font), 500, 24px, 28px, var(--blackColor));
     margin-bottom: 5px;
+    margin-left: 49px;
   }
 
   &__nation {
     @include font(var(--roboto-font), 500, 12px, 14px, rgba(#000000, 0.7));
     margin-bottom: 50px;
+    margin-left: 49px;
   }
+
+  &__text {
+    @include font(var(--roboto-font), 400, 16px, 24px, rgba(#000000, 0.7));
+    margin-bottom: 50px;
+  }
+
+  &__photo {
+    border-radius: 50%;
+    display: inline-block;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  color: var(--button-color);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  z-index: 3;
+  position: absolute;
+  top: 300px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: "";
+  display: block;
+  border-top: 2px solid var(--button-color);
+  border-left: 2px solid var(--button-color);
+  margin: 0 auto;
+  width: 14px;
+  height: 14px;
+  color: var(--button-color);
+}
+
+.slick-prev::before {
+  transform: rotate(-45deg);
+}
+
+.slick-next::before {
+  transform: rotate(135deg);
+}
+
+.slick-next {
+  left: 235px;
+}
+
+.slick-prev {
+  left: -20px;
+}
+
+.reviews-img-box {
+  width: 181px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 // ---------------Order section-------------------
@@ -332,9 +396,6 @@
       width: 173px;
     }
   }
-
-  &__img {
-  }
 }
 
 .order-example__thumb {
@@ -348,16 +409,40 @@
 // -----------------Help section---------------
 
 .help-section {
-  padding: 191px 0 149px;
+  padding: 191px 0 149px 0;
   background-color: #fff;
 }
 
 .help {
+  margin: 0 auto;
   text-align: center;
+  width: 522px;
 
   &__title {
     @include font(var(--roboto-font), 500, 44px, 52px, var(--blackColor));
     margin-bottom: 28px;
-    max-width: 522px;
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    width: 637px;
+    height: 74px;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: var(--btnTextColor);
+    border: none;
+    border-radius: 5px;
+    padding: 0 140px 0 30px;
+  }
+
+  &__button {
+    min-width: 134px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
