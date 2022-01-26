@@ -54,7 +54,7 @@
     }
 
     &-2 {
-      @include position(-219px, -250px, 5);
+      @include position(-215px, -200px, 5);
       transform: rotate(4.79deg);
     }
     &-3 {
@@ -243,6 +243,7 @@
 
   &__slider {
     max-width: 343px;
+    margin-left: 39px;
     margin-right: 224px;
     margin-top: 93px;
     padding-left: 21px;
